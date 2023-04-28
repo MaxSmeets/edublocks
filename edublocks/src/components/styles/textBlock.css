@@ -1,4 +1,6 @@
 .textBlock {
+  display: flex;
+  flex-direction: row;
   margin: 10px 0px;
   padding: 5px;
   border-radius: 8px;

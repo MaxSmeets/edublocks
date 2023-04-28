@@ -7,6 +7,7 @@ import {
   TriangleUpIcon,
 } from "@chakra-ui/icons";
 import Switch from "react-switch";
+import MenuBtn from "./MenuBtn";
 import "../../style.css";
 import "../styles/NavBar.css";
 
@@ -26,14 +27,26 @@ function NavBar() {
           </li>
           <li>
             <ConnectWallet
-              style={{ width: "215px" }}
+              style={{ width: "100%" }}
               theme={lightMode ? "light" : "dark"}
               // theme={lightMode ? "dark" : "light"}
               dropDownPosition={{
                 side: "right", // "top" | "bottom" | "left" | "right";
-                align: "start", // "start" | "center" | "end";
+                align: "end", // "start" | "center" | "end";
               }}
             />
+          </li>
+          <li>
+            <MenuBtn title='Dashboard' backgroundColor='#fff' />
+          </li>
+          <li>
+            <MenuBtn title='Credentials' backgroundColor='#fff' />
+          </li>
+          <li>
+            <MenuBtn title='Courses' backgroundColor='#fff' />
+          </li>
+          <li>
+            <MenuBtn title='Profile' backgroundColor='#fff' />
           </li>
           <li>
             <Switch
